@@ -2,6 +2,7 @@ import './App.css'
 import { FaLeaf } from 'react-icons/fa'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import 'react-tabs/style/react-tabs.css'
+// import { IndividualForm } from './components/individual-form'
 
 function App() {
 	return (
