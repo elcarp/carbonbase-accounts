@@ -23,12 +23,12 @@ function App() {
 				</div>
 				<div className='right-section bg-chalet-green-600 w-1/2 h-screen flex items-center justify-center'>
 					<div className='text-wrap text-center'>
-						<h1 className='text-white font-bold text-5xl pb-4 flex'>
+						<h1 className='text-white font-bold text-5xl pb-4 flex justify-center'>
 							Carbonbase <FaLeaf className='pl-4' />
 						</h1>
 						<p className='text-white'>Let's stop the climate clock.</p>
 						<div className='choose-login mt-7'>
-							<Tabs>
+							<Tabs className='tabs-width'>
 								<TabList>
 									<Tab className='text-white cursor-pointer w-1/2 inline-block'>
 										Individuals

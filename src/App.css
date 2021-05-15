@@ -32,7 +32,13 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.tabs-width {
+  width: 375px;
+  display: block;
 }
