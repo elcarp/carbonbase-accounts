@@ -2,7 +2,8 @@ import './App.css'
 import { FaLeaf } from 'react-icons/fa'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import 'react-tabs/style/react-tabs.css'
-// import { IndividualForm } from './components/individual-form'
+import IndividualForm from './components/individuals'
+import BrandForm from './components/brand'
 
 function App() {
 	return (
@@ -38,10 +39,10 @@ function App() {
 								</TabList>
 
 								<TabPanel className='text-white'>
-									<h2>Sign up / login for individuals</h2>
+									<IndividualForm />
 								</TabPanel>
 								<TabPanel className='text-white'>
-									<h2>Sign up / login for individuals</h2>
+									<BrandForm />
 								</TabPanel>
 							</Tabs>
 						</div>
