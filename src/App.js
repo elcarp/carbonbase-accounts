@@ -30,10 +30,10 @@ function App() {
 						<div className='choose-login mt-7'>
 							<Tabs className='tabs-width'>
 								<TabList>
-									<Tab className='text-white cursor-pointer w-1/2 inline-block font-bold py-2 bg-chalet-green rounded-t-md'>
+									<Tab className='text-white cursor-pointer w-1/2 inline-block font-bold py-2 bg-chalet-green rounded-t-lg'>
 										Individuals
 									</Tab>
-									<Tab className='text-white cursor-pointer w-1/2 inline-block font-bold py-2 bg-chalet-green rounded-t-md'>
+									<Tab className='text-white cursor-pointer w-1/2 inline-block font-bold py-2 bg-chalet-green rounded-t-lg'>
 										Brands
 									</Tab>
 								</TabList>
