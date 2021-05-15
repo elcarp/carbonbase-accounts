@@ -37,7 +37,6 @@ function App() {
 										Brands
 									</Tab>
 								</TabList>
-
 								<TabPanel className='text-white'>
 									<IndividualForm />
 								</TabPanel>
