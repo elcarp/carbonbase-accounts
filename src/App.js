@@ -3,7 +3,7 @@ import { FaLeaf } from 'react-icons/fa'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import 'react-tabs/style/react-tabs.css'
 import IndividualForm from './components/individuals'
-import BrandForm from './components/brand'
+import BrandForm from './components/brands'
 
 function App() {
 	return (
