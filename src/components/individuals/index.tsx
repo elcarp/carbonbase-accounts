@@ -8,23 +8,23 @@ const IndividualForm: FunctionComponent = () => {
 					<input
 						type='text'
 						placeholder='First Name'
-						className='px-3 py-2 w-1/2 mt-5 rounded-md mx-2 float-left'
+						className='px-3 py-2 w-1/2 mt-5 rounded-md mx-2 float-left focus:outline-none text-black'
 					/>
 					<input
 						type='text'
 						placeholder='Last Name'
-						className='px-3 py-2 w-1/2 mt-5 rounded-md mx-2 float-left'
+						className='px-3 py-2 w-1/2 mt-5 rounded-md mx-2 float-left focus:outline-none text-black'
 					/>
 				</div>
 				<input
 					type='text'
 					placeholder='Your Email'
-					className='px-3 py-2 w-full mt-5 rounded-md'
+					className='px-3 py-2 w-full mt-5 rounded-md focus:outline-none text-black'
 				/>
 				<input
 					type='text'
 					placeholder='Create a password (8 characters)'
-					className='px-3 py-2 w-full mt-5 rounded-md'
+					className='px-3 py-2 w-full mt-5 rounded-md focus:outline-none text-black'
 				/>
 				<button
 					type='submit'
