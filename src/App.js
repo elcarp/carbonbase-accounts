@@ -16,7 +16,7 @@ function App() {
 							for free in 2 minutes!
 						</h1>
 						<p>The easy step to a more sustainable life.</p>
-						<button className='mt-6 uppercase font-bold bg-chalet-green-600 px-5 py-2 rounded-lg uppercase hover:bg-chalet-green active:bg-chalet-green-100 focus:outline-none'>
+						<button className='shadow-md mt-6 uppercase font-bold bg-chalet-green-600 px-5 py-2 rounded-lg uppercase hover:bg-chalet-green active:bg-chalet-green-100 focus:outline-none'>
 							Start now
 						</button>
 					</div>
@@ -30,10 +30,10 @@ function App() {
 						<div className='choose-login mt-7'>
 							<Tabs className='tabs-width'>
 								<TabList>
-									<Tab className='text-white cursor-pointer w-1/2 inline-block'>
+									<Tab className='text-white cursor-pointer w-1/2 inline-block font-bold py-2 bg-chalet-green rounded-t-md'>
 										Individuals
 									</Tab>
-									<Tab className='text-white cursor-pointer w-1/2 inline-block'>
+									<Tab className='text-white cursor-pointer w-1/2 inline-block font-bold py-2 bg-chalet-green rounded-t-md'>
 										Brands
 									</Tab>
 								</TabList>

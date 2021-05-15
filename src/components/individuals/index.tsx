@@ -28,7 +28,7 @@ const IndividualForm: FunctionComponent = () => {
 				/>
 				<button
 					type='submit'
-					className='mt-6 uppercase font-bold bg-chalet-green-200 w-full text-lg px-5 py-2 rounded-lg uppercase hover:bg-chalet-green active:bg-chalet-green-100 focus:outline-none'>
+					className='shadow-md mt-6 uppercase font-bold bg-chalet-green-200 w-full text-lg px-5 py-2 rounded-lg uppercase hover:bg-chalet-green active:bg-chalet-green-100 focus:outline-none'>
 					Sign up for free
 				</button>
 			</div>
