@@ -1,34 +1,61 @@
 {
-  "posts": [{
-    "id": 1,
-    "title": "json-server",
-    "author": "typicode"
-  }],
-  "comments": [{
-    "id": 1,
-    "body": "some comment",
-    "postId": 1
-  }],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
   "profile": {
     "name": "typicode"
   },
-  "list": [{
+  "list": [
+    {
       "id": 1,
-      "username": "lise.carpenter@gmail.com",
-      "password": "some_password",
-      "points": 100
+      "item": "bread"
     },
     {
       "id": 2,
-      "username": "lise@zanobe.com",
-      "password": "some_password",
-      "points": 100
+      "item": "grapes"
     },
     {
-      "id": 3,
-      "username": "annapurna.carpenter@gmail.com",
-      "password": "some_password",
-      "points": 100
+      "item": "rice",
+      "id": 3
+    },
+    {
+      "credentials": {
+        "username": "lise.carpenter@gmail.com",
+        "password": "Insight8!"
+      },
+      "id": 4
+    },
+    {
+      "credentials": {
+        "username": "lise.carpenter@gmail.com",
+        "password": "Insight8!"
+      },
+      "id": 5
+    },
+    {
+      "credentials": {
+        "username": "lise@zanobe.com",
+        "password": "Insight8!"
+      },
+      "id": 6
+    },
+    {
+      "credentials": {
+        "username": "lise@zanobe.com",
+        "password": "Insight8!"
+      },
+      "id": 7
     }
   ]
 }

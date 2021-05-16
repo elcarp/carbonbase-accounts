@@ -8,12 +8,31 @@ import PropTypes from 'prop-types'
 async function loginUser(credentials) {
 	console.log('credentials?', credentials)
 
-	return fetch('http://localhost:8080/login', {
+	return (
+		fetch('http://localhost:8080/login', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify(credentials),
+		}).then((data) => data.json()),
+		fetch('http://localhost:3333/list', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify({ credentials }),
+		}).then((data) => data.json())
+	)
+}
+
+export function createUser(credentials) {
+	return fetch('http://localhost:3333/list', {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',
 		},
-		body: JSON.stringify(credentials),
+		body: JSON.stringify({ credentials }),
 	}).then((data) => data.json())
 }
 export default function Login({ setToken }) {
