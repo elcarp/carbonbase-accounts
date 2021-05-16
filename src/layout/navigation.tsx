@@ -6,9 +6,6 @@ function Navigation() {
 		<>
 			<nav>
 				<ul>
-					{/* <li className='logo'>
-						<a href='/'><img src={Burger} alt='logo'/></a>
-					</li> */}
 					<li>
 						<Link to='/dashboard'>Dashboard</Link>
 					</li>

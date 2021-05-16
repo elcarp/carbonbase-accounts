@@ -1,18 +1,23 @@
 {
-  "posts": [{
-    "id": 1,
-    "title": "json-server",
-    "author": "typicode"
-  }],
-  "comments": [{
-    "id": 1,
-    "body": "some comment",
-    "postId": 1
-  }],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
   "profile": {
     "name": "typicode"
   },
-  "list": [{
+  "list": [
+    {
       "credentials": {
         "username": "lise.carpenter@gmail.com",
         "password": "Insight8!"
@@ -53,6 +58,123 @@
         "password": "Insight8!"
       },
       "id": 9
+    },
+    {
+      "credentials": {
+        "username": "lise@zanobe.com",
+        "password": "Insight8!"
+      },
+      "id": 10
+    },
+    {
+      "credentials": {
+        "username": "lise.carpenter@gmail.com",
+        "password": "kickasspassword"
+      },
+      "id": 11
+    },
+    {
+      "credentials": {
+        "username": "lise",
+        "password": "lise"
+      },
+      "id": 12
+    },
+    {
+      "username": "lise.carpenter@gmail.com",
+      "password": "Insight8!",
+      "id": 13
+    },
+    {
+      "username": "lise.carpenter@gmail.com",
+      "password": "Insight8!",
+      "id": 14
+    },
+    {
+      "username": "lise.carpenter@gmail.com",
+      "password": "Insight8!",
+      "id": 15
+    },
+    {
+      "id": 16
+    },
+    {
+      "id": 17
+    },
+    {
+      "id": 18
+    },
+    {
+      "id": 19
+    },
+    {
+      "id": 20
+    },
+    {
+      "id": 21
+    },
+    {
+      "id": 22
+    },
+    {
+      "id": 23
+    },
+    {
+      "id": 24
+    },
+    {
+      "id": 25
+    },
+    {
+      "id": 26
+    },
+    {
+      "username": "lise.carpenter@gmail.com",
+      "password": "test",
+      "id": 27
+    },
+    {
+      "username": "lise.carpenter@gmail.com",
+      "password": "test",
+      "id": 28
+    },
+    {
+      "username": "lise.carpenter@gmail.com",
+      "password": "test",
+      "id": 29
+    },
+    {
+      "id": 30
+    },
+    {
+      "username": "lise.carpenter@Gmail.com",
+      "password": "astest",
+      "id": 31
+    },
+    {
+      "username": "lise.carpenter@Gmail.com",
+      "password": "astest",
+      "id": 32
+    },
+    {
+      "username": "lise.carpenter@Gmail.com",
+      "password": "test1234",
+      "id": 33
+    },
+    {
+      "username": "lise.carpenter@Gmail.com",
+      "password": "test1234",
+      "id": 34
+    },
+    {
+      "username": "lise.carpenter@Gmail.com",
+      "password": "test1234",
+      "id": 35
+    },
+    {
+      "username": "lise.carpenter@Gmail.com",
+      "password": "test1234",
+      "id": 36
     }
   ]
 }
