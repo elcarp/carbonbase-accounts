@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Dashboard from '../components/Dashboard'
 import Preferences from '../components/Preferences'
 import Login from './login'
 
 function Main() {
+
 	return (
 		<>
-			<div className='App'>
+			<div className='wrapper'>
+			<h1>Application</h1>
 				<Switch>
 					<Route path='/dashboard'>
 						<Dashboard />
