@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react'
+import React from 'react'
 import { FaLeaf } from 'react-icons/fa'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import BrandForm from '../components/brands'
