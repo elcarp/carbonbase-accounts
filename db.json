@@ -56,6 +56,13 @@
         "password": "Insight8!"
       },
       "id": 7
+    },
+    {
+      "credentials": {
+        "username": "lise@zanobe.com",
+        "password": "Insight8!"
+      },
+      "id": 8
     }
   ]
 }
