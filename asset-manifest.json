@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/carbonbase-accounts/static/css/main.2e069d55.chunk.css",
-    "main.js": "/carbonbase-accounts/static/js/main.211bcd42.chunk.js",
-    "main.js.map": "/carbonbase-accounts/static/js/main.211bcd42.chunk.js.map",
-    "runtime-main.js": "/carbonbase-accounts/static/js/runtime-main.3447190a.js",
-    "runtime-main.js.map": "/carbonbase-accounts/static/js/runtime-main.3447190a.js.map",
+    "main.js": "/carbonbase-accounts/static/js/main.d41f5c08.chunk.js",
+    "main.js.map": "/carbonbase-accounts/static/js/main.d41f5c08.chunk.js.map",
+    "runtime-main.js": "/carbonbase-accounts/static/js/runtime-main.923f80bd.js",
+    "runtime-main.js.map": "/carbonbase-accounts/static/js/runtime-main.923f80bd.js.map",
     "static/css/2.27175f2b.chunk.css": "/carbonbase-accounts/static/css/2.27175f2b.chunk.css",
-    "static/js/2.c8d57bf7.chunk.js": "/carbonbase-accounts/static/js/2.c8d57bf7.chunk.js",
-    "static/js/2.c8d57bf7.chunk.js.map": "/carbonbase-accounts/static/js/2.c8d57bf7.chunk.js.map",
-    "static/js/3.309bfae4.chunk.js": "/carbonbase-accounts/static/js/3.309bfae4.chunk.js",
-    "static/js/3.309bfae4.chunk.js.map": "/carbonbase-accounts/static/js/3.309bfae4.chunk.js.map",
+    "static/js/2.31889376.chunk.js": "/carbonbase-accounts/static/js/2.31889376.chunk.js",
+    "static/js/2.31889376.chunk.js.map": "/carbonbase-accounts/static/js/2.31889376.chunk.js.map",
+    "static/js/3.8b90da64.chunk.js": "/carbonbase-accounts/static/js/3.8b90da64.chunk.js",
+    "static/js/3.8b90da64.chunk.js.map": "/carbonbase-accounts/static/js/3.8b90da64.chunk.js.map",
     "index.html": "/carbonbase-accounts/index.html",
     "static/css/2.27175f2b.chunk.css.map": "/carbonbase-accounts/static/css/2.27175f2b.chunk.css.map",
     "static/css/main.2e069d55.chunk.css.map": "/carbonbase-accounts/static/css/main.2e069d55.chunk.css.map",
-    "static/js/2.c8d57bf7.chunk.js.LICENSE.txt": "/carbonbase-accounts/static/js/2.c8d57bf7.chunk.js.LICENSE.txt"
+    "static/js/2.31889376.chunk.js.LICENSE.txt": "/carbonbase-accounts/static/js/2.31889376.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.3447190a.js",
+    "static/js/runtime-main.923f80bd.js",
     "static/css/2.27175f2b.chunk.css",
-    "static/js/2.c8d57bf7.chunk.js",
+    "static/js/2.31889376.chunk.js",
     "static/css/main.2e069d55.chunk.css",
-    "static/js/main.211bcd42.chunk.js"
+    "static/js/main.d41f5c08.chunk.js"
   ]
 }
