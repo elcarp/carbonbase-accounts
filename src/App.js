@@ -8,8 +8,8 @@ import BrandForm from './components/brands'
 function App() {
 	return (
 		<>
-			<div className='wrapper bg-chalet-green flex items-center justify-center h-screen'>
-				<div className='left-section bg-chalet-green-400 text-white h-screen w-1/2 flex items-center justify-center'>
+			<div className='wrapper bg-chalet-green block md:flex items-center justify-center h-screen'>
+				<div className='left-section bg-chalet-green-400 text-white h-screen w-full md:w-1/2 flex items-center justify-center'>
 					<div className='content text-center'>
 						<h1 className='pb-4'>
 							Find out your carbon footprint <br />
@@ -21,7 +21,7 @@ function App() {
 						</button>
 					</div>
 				</div>
-				<div className='right-section bg-chalet-green-600 w-1/2 h-screen flex items-center justify-center'>
+				<div className='right-section bg-chalet-green-600 w-full md:w-1/2 h-screen flex items-center justify-center'>
 					<div className='text-wrap text-center'>
 						<h1 className='text-white font-bold text-5xl pb-4 flex justify-center'>
 							Carbonbase <FaLeaf className='pl-4' />
