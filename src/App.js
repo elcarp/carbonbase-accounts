@@ -2,7 +2,7 @@ import './App.css'
 import 'react-tabs/style/react-tabs.css'
 import { BrowserRouter as Router } from 'react-router-dom'
 import Main from './layout/main'
-import Login from './layout/login'
+import Login from './layout/login.js'
 import React, { useState } from 'react'
 
 function App() {

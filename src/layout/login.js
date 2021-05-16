@@ -1,10 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaLeaf } from 'react-icons/fa'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import BrandForm from '../components/brands'
 import IndividualForm from '../components/individuals'
+import PropTypes from 'prop-types'
 
-function Login() {
+async function loginUser(credentials) {
+	return fetch('http://localhost:8080/login', {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json',
+		},
+		body: JSON.stringify(credentials),
+	}).then((data) => data.json())
+}
+export default function Login({ setToken }) {
+	const [username, setUserName] = useState()
+	const [password, setPassword] = useState()
+
+	const handleSubmit = async (e) => {
+		e.preventDefault()
+		const token = await loginUser({
+			username,
+			password,
+		})
+		setToken(token)
+	}
+
 	return (
 		<>
 			<div className='wrapper bg-chalet-green block md:flex items-center justify-center h-screen'>
@@ -27,7 +49,29 @@ function Login() {
 						</h1>
 						<p className='text-white'>Let's stop the climate clock.</p>
 						<div className='choose-login mt-7'>
-							<Tabs className='tabs-width'>
+							<form onSubmit={handleSubmit}>
+								<div className='form-wrapper text-sm'>
+									<input
+										type='text'
+										placeholder='Your Email'
+										onChange={() => setUserName}
+										className='px-3 py-2 w-full mt-5 rounded-md focus:outline-none text-black'
+									/>
+									<input
+										type='text'
+										placeholder='Create a password (8 characters)'
+										onChange={() => setPassword}
+										className='px-3 py-2 w-full mt-5 rounded-md focus:outline-none text-black'
+									/>
+									<button
+										type='submit'
+										className='shadow-md mt-6 uppercase font-bold bg-chalet-green-200 w-full text-lg px-5 py-2 rounded-lg uppercase hover:bg-chalet-green active:bg-chalet-green-100 focus:outline-none'>
+										Create account
+									</button>
+								</div>
+							</form>
+
+							{/* <Tabs className='tabs-width'>
 								<TabList>
 									<Tab className='text-white cursor-pointer w-1/2 inline-block font-bold py-2 bg-chalet-green rounded-t-lg'>
 										Individuals
@@ -42,7 +86,7 @@ function Login() {
 								<TabPanel className='text-white'>
 									<BrandForm />
 								</TabPanel>
-							</Tabs>
+							</Tabs> */}
 						</div>
 					</div>
 				</div>
@@ -50,4 +94,11 @@ function Login() {
 		</>
 	)
 }
-export default Login
+// export default Login
+
+Login.propTypes = {
+	setToken: PropTypes.func.isRequired,
+}
+function setToken(token) {
+	throw new Error('Function not implemented.')
+}
