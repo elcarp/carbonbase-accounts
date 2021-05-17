@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const SideBar: FunctionComponent = () => {
 	return (
 		<>
-			<div className='sidebar w-1/6 bg-chalet-green h-screen'>
+			<div className='sidebar w-1/5 bg-chalet-green h-screen'>
 				<ul className='pl-3'>
 					<li>
 						<h1 className='text-white font-bold text-3xl py-10 pb-4 flex'>
@@ -13,13 +13,13 @@ const SideBar: FunctionComponent = () => {
 						</h1>
 					</li>
 					<li>
-						<Link className='text-white no-underline my-2 block' to='/'>
-							Offset
+						<Link className='text-white no-underline my-2 block' to='/main'>
+							Home
 						</Link>
 					</li>
 					<li>
-						<Link className='text-white no-underline my-2 block' to='/'>
-							Redeem
+						<Link className='text-white no-underline my-2 block' to='/earn'>
+							Earn
 						</Link>
 					</li>
                     <li>
