@@ -6,14 +6,19 @@ export default function Dashboard() {
 		<>
 			<div className='dashboard-page w-full h-screen bg-chalet-green-100'>
 				<div className='greeting text-center w-full pt-20'>
-					Hi Lise! You currently have <strong>1,000</strong> Carbonbase points
-					and have offset <strong>0</strong> tons of CO₂
+					<div className='profile-pic w-10 h-10 flex justify-center mx-auto items-center bg-chalet-green-600 text-white font-bold rounded-full'>
+						LC
+					</div>
+					<p className='py-10'>
+						Hi Lise! You currently have <strong>100</strong> Carbonbase points
+						and have offset <strong>0</strong> tons of CO₂
+					</p>
 				</div>
 
-				<Tabs className='w-1/2 mx-auto pt-20'>
+				<Tabs className='w-1/2 mx-auto'>
 					<TabList>
 						<Tab className='text-white cursor-pointer w-1/3 inline-block font-bold py-2 px-4 shadow-md bg-chalet-green rounded-t-lg'>
-							Earn | Offset
+							Earn
 						</Tab>
 						<Tab className='text-white cursor-pointer w-1/3 inline-block font-bold py-2 px-4 shadow-md bg-chalet-green rounded-t-lg'>
 							Redeem
