@@ -6,6 +6,8 @@ import IndividualForm from '../components/individuals'
 import PropTypes from 'prop-types'
 
 async function loginUser(credentials) {
+	console.log('credentials?', credentials)
+
 	return fetch('http://localhost:8080/login', {
 		method: 'POST',
 		headers: {
@@ -26,11 +28,10 @@ export default function Login({ setToken }) {
 		})
 		setToken(token)
 	}
-
 	return (
 		<>
 			<div className='wrapper bg-chalet-green block md:flex items-center justify-center h-screen'>
-				<div className='left-section bg-chalet-green-400 text-white h-screen w-full md:w-1/2 flex items-center justify-center'>
+				<div className='left-section bg-chalet-green-400 text-white h-screen w-full md:w-1/2  px-10 flex items-center justify-center'>
 					<div className='content text-center'>
 						<h1 className='pb-4'>
 							Find out your carbon footprint <br />
@@ -42,7 +43,7 @@ export default function Login({ setToken }) {
 						</button>
 					</div>
 				</div>
-				<div className='right-section bg-chalet-green-600 w-full md:w-1/2 h-screen flex items-center justify-center'>
+				<div className='right-section bg-chalet-green-600 w-full md:w-1/2  px-10 h-screen flex items-center justify-center'>
 					<div className='text-wrap text-center'>
 						<h1 className='text-white font-bold text-5xl pb-4 flex justify-center'>
 							Carbonbase <FaLeaf className='pl-4' />
@@ -54,13 +55,13 @@ export default function Login({ setToken }) {
 									<input
 										type='text'
 										placeholder='Your Email'
-										onChange={() => setUserName}
+										onChange={(e) => setUserName(e.target.value)}
 										className='px-3 py-2 w-full mt-5 rounded-md focus:outline-none text-black'
 									/>
 									<input
 										type='text'
 										placeholder='Create a password (8 characters)'
-										onChange={() => setPassword}
+										onChange={(e) => setPassword(e.target.value)}
 										className='px-3 py-2 w-full mt-5 rounded-md focus:outline-none text-black'
 									/>
 									<button
@@ -99,6 +100,6 @@ export default function Login({ setToken }) {
 Login.propTypes = {
 	setToken: PropTypes.func.isRequired,
 }
-function setToken(token) {
-	throw new Error('Function not implemented.')
-}
+// function setToken(token) {
+// 	throw new Error('Function not implemented.')
+// }

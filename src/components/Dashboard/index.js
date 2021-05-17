@@ -1,5 +1,14 @@
 import React from 'react'
+import Sidebar from './sidebar'
+import Main from './main'
 
 export default function Dashboard() {
-	return <h2>Dashboard page here</h2>
+	return (
+		<>
+			<div className='dashboard-page w-full h-screen bg-chalet-green-100'>
+				<Sidebar />
+				<Main />
+			</div>
+		</>
+	)
 }
