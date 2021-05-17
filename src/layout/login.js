@@ -4,6 +4,7 @@ import { FaLeaf } from 'react-icons/fa'
 // import BrandForm from '../components/brands'
 // import IndividualForm from '../components/individuals'
 import PropTypes from 'prop-types'
+import BrandAdmin from './brand'
 
 async function loginUser(credentials) {
 	return fetch('http://localhost:8080/login', {
@@ -119,7 +120,9 @@ export default function Login({ setToken }, id, credentials) {
 					</div>
 				</div>
 			</div>
-			<div className='brand-section block md:hidden'>brand section here</div>
+			<div className='brand-section block md:hidden'>
+				<BrandAdmin />
+			</div>
 		</>
 	)
 }
