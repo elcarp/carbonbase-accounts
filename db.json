@@ -18,8 +18,9 @@
   },
   "list": [
     {
-      "username": "lise",
-      "password": "lisepassword",
+      "name": "Lise Carpenter",
+      "username": "lise.carpenter@gmail.com",
+      "password": "mypassword",
       "points": 100,
       "id": 1
     }

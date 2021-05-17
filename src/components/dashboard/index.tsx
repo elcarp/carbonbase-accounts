@@ -19,7 +19,7 @@ export default function Dashboard() {
 	}, [])
 
 	const currentUser = users
-console.log('current user', currentUser && currentUser.password)
+	console.log(currentUser && currentUser.name)
 	return (
 		<>
 			<div className='dashboard-page w-full h-screen bg-chalet-green-100'>
@@ -28,7 +28,7 @@ console.log('current user', currentUser && currentUser.password)
 						LC
 					</div>
 					<p className='py-10'>
-						Hi Lise! You currently have <strong>100</strong> Carbonbase points
+						Hi <strong>{currentUser && currentUser.name}</strong>! You currently have <strong>{currentUser && currentUser.points}</strong> Carbonbase points
 						and have offset <strong>0</strong> tons of CO₂
 					</p>
 				</div>

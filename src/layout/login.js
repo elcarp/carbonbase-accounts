@@ -6,8 +6,6 @@ import { FaLeaf } from 'react-icons/fa'
 import PropTypes from 'prop-types'
 
 async function loginUser(credentials) {
-	console.log('credentials here', credentials)
-
 	return fetch('http://localhost:8080/login', {
 		method: 'POST',
 		headers: {
@@ -27,10 +25,12 @@ async function createUser(credentials, username, password) {
 	}).then((data) => data.json())
 }
 export default function Login({ setToken }, id, credentials) {
+	const [name, setName] = useState()
 	const [username, setUserName] = useState()
 	const [password, setPassword] = useState()
 	const loginCredentials = {
 		id: credentials,
+		name: name,
 		username: username,
 		password: password,
 		points: 100,
@@ -73,6 +73,12 @@ export default function Login({ setToken }, id, credentials) {
 						<div className='choose-login'>
 							<form onSubmit={handleSubmit}>
 								<div className='form-wrapper text-sm'>
+									<input
+										type='text'
+										placeholder='Your Name'
+										onChange={(e) => setName(e.target.value)}
+										className='px-3 py-2 w-full mt-5 rounded-md focus:outline-none text-black'
+									/>
 									<input
 										type='text'
 										placeholder='Your Email'
