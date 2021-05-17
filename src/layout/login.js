@@ -6,6 +6,8 @@ import { FaLeaf } from 'react-icons/fa'
 import PropTypes from 'prop-types'
 
 async function loginUser(credentials) {
+	console.log('credentials here', credentials)
+
 	return fetch('http://localhost:8080/login', {
 		method: 'POST',
 		headers: {
@@ -14,19 +16,20 @@ async function loginUser(credentials) {
 		body: JSON.stringify(credentials),
 	}).then((data) => data.json())
 }
-async function createUser(credentials) {
+
+async function createUser(username, password) {
 	return fetch('http://localhost:3333/list', {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',
 		},
-		body: JSON.stringify(credentials),
+		body: JSON.stringify(username, password),
 	}).then((data) => data.json())
 }
-export default function Login({ setToken }, credentials) {
+export default function Login({ setToken }) {
 	const [username, setUserName] = useState()
 	const [password, setPassword] = useState()
-
+	const loginCredentials = [username, password]
 	const handleSubmit = async (e) => {
 		e.preventDefault()
 		const token = await loginUser({
@@ -34,7 +37,7 @@ export default function Login({ setToken }, credentials) {
 			password,
 		})
 		setToken(token)
-		createUser(credentials)
+		createUser(loginCredentials)
 	}
 
 	return (
