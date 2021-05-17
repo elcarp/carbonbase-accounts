@@ -39,7 +39,7 @@ export default function Dashboard() {
 							<div className='w-full flex justify-center'>
 								<div className='text-center'>
 								<p className='pb-5'>Request merchant to scan your QR code</p>
-								<QRCode className='mx-auto' value='http://facebook.github.io/react/' />
+								<QRCode className='mx-auto' value='http://91cf2815b256.ngrok.io/dashboard' />
 								</div>
 							</div>
 						</div>
