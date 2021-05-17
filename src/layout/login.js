@@ -73,7 +73,7 @@ export default function Login({ setToken }, id, credentials) {
 						</p>
 						<div className='choose-login'>
 							<form onSubmit={handleSubmit}>
-								<div className='form-wrapper text-sm'>
+								<div className='form-wrapper text-sm w-2/3 mx-auto pt-3'>
 									<input
 										type='text'
 										placeholder='Your Name'
