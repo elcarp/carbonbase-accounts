@@ -33,13 +33,13 @@ export default function Login({ setToken }) {
 			<div className='wrapper bg-chalet-green block md:flex items-center justify-center h-screen'>
 				<div className='left-section bg-chalet-green-400 text-white h-screen w-full md:w-1/2  px-10 flex items-center justify-center'>
 					<div className='content text-center'>
-						<h1 className='pb-4'>
-							Find out your carbon footprint <br />
-							for free in 2 minutes!
-						</h1>
-						<p>The easy step to a more sustainable life.</p>
+						<h1 className='pb-4'>Brands Login</h1>
+						<p>
+							Grow your brand by <br />
+							rewarding sustainable lifestyles.
+						</p>
 						<button className='shadow-md mt-6 uppercase font-bold bg-chalet-green-600 px-5 py-2 rounded-lg uppercase hover:bg-chalet-green active:bg-chalet-green-100 focus:outline-none'>
-							Start now
+							Sign up / Login
 						</button>
 					</div>
 				</div>
@@ -48,8 +48,12 @@ export default function Login({ setToken }) {
 						<h1 className='text-white font-bold text-5xl pb-4 flex justify-center'>
 							Carbonbase <FaLeaf className='pl-4' />
 						</h1>
-						<p className='text-white'>Let's stop the climate clock.</p>
-						<div className='choose-login mt-7'>
+						<p className='text-white mb-3'>Let's stop the climate clock.</p>
+						<p className='text-white'>
+							Find out your carbon footprint <br />
+							for free in 2 minutes!
+						</p>
+						<div className='choose-login'>
 							<form onSubmit={handleSubmit}>
 								<div className='form-wrapper text-sm'>
 									<input
