@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const SideBar: FunctionComponent = () => {
 	return (
 		<>
-			<div className='sidebar w-1/4 bg-chalet-green h-screen'>
+			<div className='sidebar w-1/6 bg-chalet-green h-screen'>
 				<ul className='pl-3'>
 					<li>
 						<h1 className='text-white font-bold text-3xl py-10 pb-4 flex'>
