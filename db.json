@@ -30,6 +30,27 @@
       "password": "annapurnaspassword",
       "points": 100,
       "id": 2
+    },
+    {
+      "name": "Lise Carpenter",
+      "username": "lise.carpenter@gmail.com",
+      "password": "newpassword",
+      "points": 100,
+      "id": 3
+    },
+    {
+      "name": "Lise Carpenter",
+      "username": "lise.carpenter@gmail.com",
+      "password": "newpassword",
+      "points": 100,
+      "id": 4
+    },
+    {
+      "name": "Lise ",
+      "username": "lise.carpenter@gmail.com",
+      "password": "mypassword",
+      "points": 100,
+      "id": 5
     }
   ]
 }

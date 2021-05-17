@@ -47,7 +47,7 @@ export default function Login({ setToken }, id, credentials) {
 
 	return (
 		<>
-			<div className='wrapper bg-chalet-green block md:flex items-center justify-center h-screen'>
+			<div className='wrapper bg-chalet-green hidden md:flex items-center justify-center h-screen'>
 				<div className='left-section bg-chalet-green-400 text-white h-screen w-full md:w-1/2  px-10 flex items-center justify-center'>
 					<div className='content text-center'>
 						<h1 className='pb-4'>Brands Login</h1>
@@ -119,6 +119,7 @@ export default function Login({ setToken }, id, credentials) {
 					</div>
 				</div>
 			</div>
+			<div className='brand-section block md:hidden'>brand section here</div>
 		</>
 	)
 }

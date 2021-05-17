@@ -57,7 +57,7 @@ export default function Dashboard() {
 									<p className='pb-5'>Request merchant to scan your QR code</p>
 									<QRCode
 										className='mx-auto'
-										value='http://91cf2815b256.ngrok.io/dashboard'
+										value='http://0737618abf57.ngrok.io'
 									/>
 								</div>
 							</div>
