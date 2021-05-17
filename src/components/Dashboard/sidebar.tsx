@@ -13,13 +13,13 @@ const SideBar: FunctionComponent = () => {
 						</h1>
 					</li>
 					<li>
-						<Link className='text-white no-underline my-2 block' to='/'>
-							Offset
+						<Link className='text-white no-underline my-2 block' to='/main'>
+							User home
 						</Link>
 					</li>
 					<li>
-						<Link className='text-white no-underline my-2 block' to='/'>
-							Redeem
+						<Link className='text-white no-underline my-2 block' to='/earn'>
+							Earn
 						</Link>
 					</li>
                     <li>
