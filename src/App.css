@@ -44,5 +44,5 @@
 }
 
 .react-tabs__tab--selected {
-  background: #94c381;
+  background: #94c381 !important;
 }
