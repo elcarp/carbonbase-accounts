@@ -194,6 +194,20 @@
     [
       "12",
       "21"
-    ]
+    ],
+    [
+      "123",
+      "123"
+    ],
+    {
+      "id": {},
+      "username": "lise.carpenter@gmail.com",
+      "password": "testin123"
+    },
+    {
+      "username": "lise.carpenter@gmail.com",
+      "password": "newpassword",
+      "id": 44
+    }
   ]
 }

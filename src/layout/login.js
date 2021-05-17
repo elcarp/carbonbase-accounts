@@ -17,19 +17,23 @@ async function loginUser(credentials) {
 	}).then((data) => data.json())
 }
 
-async function createUser(username, password) {
+async function createUser(credentials, username, password) {
 	return fetch('http://localhost:3333/list', {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',
 		},
-		body: JSON.stringify(username, password),
+		body: JSON.stringify(credentials, username, password),
 	}).then((data) => data.json())
 }
-export default function Login({ setToken }) {
+export default function Login({ setToken }, id, credentials) {
 	const [username, setUserName] = useState()
 	const [password, setPassword] = useState()
-	const loginCredentials = [username, password]
+	const loginCredentials = {
+		id: credentials,
+		username: username,
+		password: password,
+	}
 	const handleSubmit = async (e) => {
 		e.preventDefault()
 		const token = await loginUser({
