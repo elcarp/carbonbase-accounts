@@ -20,53 +20,63 @@
     {
       "name": "Lise Carpenter",
       "username": "lise.carpenter@gmail.com",
-      "password": "mypassword",
+      "password": "password",
       "points": 100,
       "id": 1
     },
     {
-      "name": "Annapurna Carpenter",
-      "username": "annapurna.carpenter@gmail.com",
-      "password": "annapurnaspassword",
+      "name": "Lise Carpenter",
+      "username": "lise.carpenter@gmail.com",
+      "password": "toknsc",
       "points": 100,
       "id": 2
     },
     {
-      "name": "Lise Carpenter",
-      "username": "lise.carpenter@gmail.com",
-      "password": "newpassword",
-      "points": 100,
+      "points": 250,
       "id": 3
     },
     {
-      "name": "Lise Carpenter",
-      "username": "lise.carpenter@gmail.com",
-      "password": "newpassword",
-      "points": 100,
+      "0": {
+        "points": 150
+      },
+      "1": {},
+      "2": {},
+      "3": {},
       "id": 4
     },
     {
-      "name": "Lise ",
-      "username": "lise.carpenter@gmail.com",
-      "password": "mypassword",
-      "points": 100,
+      "0": {
+        "points": null
+      },
+      "1": {},
+      "2": {},
+      "3": {},
       "id": 5
     },
     {
-      "name": "Lise Carpenter",
-      "username": "lise.carpenter@gmail.com",
-      "password": "newpassword",
-      "points": 100,
+      "0": {
+        "points": 150
+      },
+      "1": {
+        "name": "Lise"
+      },
+      "2": {
+        "username": "lise.carpenter@gmail.com"
+      },
+      "3": {
+        "password": "password"
+      },
       "id": 6
     },
     {
-      "name": "Lise",
-      "username": "lise.carpenter@gmail.com",
-      "password": "mypassword",
-      "points": 100,
+      "points": null,
       "id": 7
     },
     {
+      "points": 150,
+      "name": "Lise Carpenter",
+      "username": "lise.carpenter@gmail.com",
+      "password": "Insight8!",
       "id": 8
     }
   ]
