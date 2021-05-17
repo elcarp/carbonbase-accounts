@@ -17,7 +17,7 @@ function App() {
 	return (
 		<>
 			<Router>
-				{/* <Navigation /> */}
+				<Navigation />
 				<Main />
 			</Router>
 		</>
