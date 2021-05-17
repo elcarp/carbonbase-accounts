@@ -1,6 +1,8 @@
 import React from 'react'
 import { Tab, TabList, TabPanel, Tabs } from 'react-tabs'
 
+const QRCode = require('qrcode.react');
+
 export default function Dashboard() {
 	return (
 		<>
@@ -28,10 +30,10 @@ export default function Dashboard() {
 						</Tab>
 					</TabList>
 					<TabPanel className='bg-white rounded-md shadow-md'>
-						<div className='p-7'>asdf</div>
+						<div className='p-7'>Check out some of our latest projects:</div>
 					</TabPanel>
 					<TabPanel className='bg-white rounded-md shadow-md'>
-						<div className='p-7'>QR code goes here</div>
+						<div className='p-7'><QRCode value="http://facebook.github.io/react/" /></div>
 					</TabPanel>
 					<TabPanel className='bg-white rounded-md shadow-md'>
 						<div className='p-7'>Learn more. Check out our blog.</div>
