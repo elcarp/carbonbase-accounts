@@ -1,7 +1,7 @@
 import React from 'react'
 import { Tab, TabList, TabPanel, Tabs } from 'react-tabs'
 
-const QRCode = require('qrcode.react');
+const QRCode = require('qrcode.react')
 
 export default function Dashboard() {
 	return (
@@ -30,13 +30,24 @@ export default function Dashboard() {
 						</Tab>
 					</TabList>
 					<TabPanel className='bg-white rounded-md shadow-md'>
-						<div className='p-7'>Check out some of our latest projects:</div>
+						<div className='p-7 text-center'>
+							Check out some of our latest projects:
+						</div>
 					</TabPanel>
 					<TabPanel className='bg-white rounded-md shadow-md'>
-						<div className='p-7'><QRCode value="http://facebook.github.io/react/" /></div>
+						<div className='p-7 text-center'>
+							<div className='w-full flex justify-center'>
+								<div className='text-center'>
+								<p className='pb-5'>Request merchant to scan your QR code</p>
+								<QRCode className='mx-auto' value='http://facebook.github.io/react/' />
+								</div>
+							</div>
+						</div>
 					</TabPanel>
 					<TabPanel className='bg-white rounded-md shadow-md'>
-						<div className='p-7'>Learn more. Check out our blog.</div>
+						<div className='p-7 text-center'>
+							Learn more. Check out our blog.
+						</div>
 					</TabPanel>
 				</Tabs>
 			</div>
