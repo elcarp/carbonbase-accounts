@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
-import Dashboard from '../components/dashboard'
-import Preferences from '../components/preferences'
+// import Dashboard from '../components/dashboard'
+// import Preferences from '../components/preferences'
 
 function Main() {
 
@@ -10,10 +10,10 @@ function Main() {
 			<div className='wrapper'>
 				<Switch>
 					<Route path='/dashboard'>
-						<Dashboard />
+						{/* <Dashboard /> */} Initial content
 					</Route>
 					<Route path='/preferences'>
-						<Preferences />
+						{/* <Preferences /> */} Something else
 					</Route>
 				</Switch>
 			</div>

@@ -42,7 +42,3 @@
   width: 375px;
   display: block;
 }
-
-.react-tabs__tab--selected {
-  background: #94c381 !important;
-}

@@ -95,10 +95,11 @@ export default function Login({ setToken }) {
 		</>
 	)
 }
+// export default Login
 
 Login.propTypes = {
 	setToken: PropTypes.func.isRequired,
 }
-function setToken(token) {
-	throw new Error('Function not implemented.')
-}
+// function setToken(token) {
+// 	throw new Error('Function not implemented.')
+// }
