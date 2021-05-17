@@ -1,13 +1,11 @@
 import React, { useState } from 'react'
 import { FaLeaf } from 'react-icons/fa'
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
-import BrandForm from '../components/brands'
-import IndividualForm from '../components/individuals'
+// import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
+// import BrandForm from '../components/brands'
+// import IndividualForm from '../components/individuals'
 import PropTypes from 'prop-types'
 
 async function loginUser(credentials) {
-	console.log('credentials?', credentials)
-
 	return fetch('http://localhost:8080/login', {
 		method: 'POST',
 		headers: {
@@ -16,7 +14,16 @@ async function loginUser(credentials) {
 		body: JSON.stringify(credentials),
 	}).then((data) => data.json())
 }
-export default function Login({ setToken }) {
+async function createUser(credentials) {
+	return fetch('http://localhost:3333/list', {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json',
+		},
+		body: JSON.stringify(credentials),
+	}).then((data) => data.json())
+}
+export default function Login({ setToken }, credentials) {
 	const [username, setUserName] = useState()
 	const [password, setPassword] = useState()
 
@@ -27,7 +34,9 @@ export default function Login({ setToken }) {
 			password,
 		})
 		setToken(token)
+		createUser(credentials)
 	}
+
 	return (
 		<>
 			<div className='wrapper bg-chalet-green block md:flex items-center justify-center h-screen'>
@@ -103,6 +112,6 @@ export default function Login({ setToken }) {
 Login.propTypes = {
 	setToken: PropTypes.func.isRequired,
 }
-function setToken(token) {
-	throw new Error('Function not implemented.')
-}
+// function setToken(token) {
+// 	throw new Error('Function not implemented.')
+// }
