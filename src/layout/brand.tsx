@@ -60,12 +60,12 @@ const BrandAdmin: FunctionComponent = () => {
 					<h1 className='pb-4'>Brand Admin</h1>
 					<a
 						onClick={() => addPoints()}
-						className='clear no-underline text-white block mx-auto my-10 shadow-md mt-6 uppercase bg-chalet-green-200 w-full text-lg px-5 py-2 rounded-lg uppercase hover:bg-chalet-green active:bg-chalet-green-100 focus:outline-none'>
+						className='clear cursor-pointer no-underline text-white block mx-auto my-10 shadow-md mt-6 uppercase bg-chalet-green-200 w-full text-lg px-5 py-2 rounded-lg uppercase hover:bg-chalet-green active:bg-chalet-green-100 focus:outline-none'>
 						Award <strong>user</strong> 50 points
 					</a>
 					<a
 						onClick={() => redeemPoints()}
-						className='clear no-underline text-white block mx-auto my-10 shadow-md mt-6 uppercase bg-chalet-green-200 w-full text-lg px-5 py-2 rounded-lg uppercase hover:bg-chalet-green active:bg-chalet-green-100 focus:outline-none'>
+						className='clear cursor-pointer no-underline text-white block mx-auto my-10 shadow-md mt-6 uppercase bg-chalet-green-200 w-full text-lg px-5 py-2 rounded-lg uppercase hover:bg-chalet-green active:bg-chalet-green-100 focus:outline-none'>
 						Redeem 50 points from <strong>user</strong>
 					</a>
 				</div>
