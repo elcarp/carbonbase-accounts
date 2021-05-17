@@ -18,7 +18,7 @@ export default function Dashboard() {
 		getUsers()
 	}, [])
 
-	const currentUser = users[users.length -1]
+	const currentUser = users && users[users.length -1]
 
 	return (
 		<>
