@@ -1,14 +1,24 @@
 import React from 'react'
-import { Route, Switch } from 'react-router-dom'
+import { Redirect, Route, Switch } from 'react-router-dom'
 import Dashboard from '../components/dashboard'
 import Preferences from '../components/preferences'
 
-function Main() {
-
+function Main(token: any) {
 	return (
 		<>
 			<div className='wrapper'>
 				<Switch>
+					<Route
+						exact
+						path='/'
+						render={() => {
+							return !token ? (
+								<Redirect to='/' />
+							) : (
+								<Redirect to='/dashboard' />
+							)
+						}}
+					/>
 					<Route path='/dashboard'>
 						<Dashboard />
 					</Route>
