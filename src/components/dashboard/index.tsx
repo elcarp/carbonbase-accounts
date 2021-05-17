@@ -19,7 +19,7 @@ export default function Dashboard() {
 	}, [])
 
 	const currentUser = users[users.length -1]
-	console.log('the user', currentUser)
+
 	return (
 		<>
 			<div className='dashboard-page w-full h-screen bg-chalet-green-100'>
