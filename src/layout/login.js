@@ -26,7 +26,7 @@ async function createUser(credentials, username, password) {
 		body: JSON.stringify(credentials, username, password),
 	}).then((data) => data.json())
 }
-export default function Login({ setToken }, credentials) {
+export default function Login({ setToken }, id, credentials) {
 	const [username, setUserName] = useState()
 	const [password, setPassword] = useState()
 	const loginCredentials = {
