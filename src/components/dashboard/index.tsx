@@ -9,7 +9,7 @@ export default function Dashboard() {
 	function getUsers() {
 		fetch('http://localhost:3333/list')
 			.then((response) => response.json())
-			.then(([users]) => {
+			.then((users) => {
 				setUsers(users)
 			})
 		return users
@@ -18,8 +18,8 @@ export default function Dashboard() {
 		getUsers()
 	}, [])
 
-	const currentUser = users
-	console.log(currentUser && currentUser.name)
+	const currentUser = users[users.length -1]
+	console.log('the user', currentUser)
 	return (
 		<>
 			<div className='dashboard-page w-full h-screen bg-chalet-green-100'>

@@ -23,6 +23,13 @@
       "password": "mypassword",
       "points": 100,
       "id": 1
+    },
+    {
+      "name": "Annapurna Carpenter",
+      "username": "annapurna.carpenter@gmail.com",
+      "password": "annapurnaspassword",
+      "points": 100,
+      "id": 2
     }
   ]
 }
