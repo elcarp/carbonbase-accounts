@@ -51,6 +51,13 @@
       "password": "mypassword",
       "points": 100,
       "id": 5
+    },
+    {
+      "name": "Lise Carpenter",
+      "username": "lise.carpenter@gmail.com",
+      "password": "newpassword",
+      "points": 100,
+      "id": 6
     }
   ]
 }

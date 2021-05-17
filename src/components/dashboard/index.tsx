@@ -6,19 +6,17 @@ const QRCode = require('qrcode.react')
 export default function Dashboard() {
 	const [users, setUsers] = useState<any>()
 
-	function getUsers() {
-		fetch('http://localhost:3333/list')
-			.then((response) => response.json())
-			.then((users) => {
-				setUsers(users)
-			})
-		return users
-	}
 	useEffect(() => {
+		const getUsers = () => {
+			fetch('http://localhost:3333/list')
+				.then((response) => response.json())
+				.then((users) => {
+					setUsers(users)
+				})
+		}
 		getUsers()
 	}, [])
-
-	const currentUser = users && users[users.length -1]
+	const currentUser = users && users[users.length - 1]
 
 	return (
 		<>
@@ -28,8 +26,9 @@ export default function Dashboard() {
 						LC
 					</div>
 					<p className='py-10'>
-						Hi <strong>{currentUser && currentUser.name}</strong>! You currently have <strong>{currentUser && currentUser.points}</strong> Carbonbase points
-						and have offset <strong>0</strong> tons of CO₂
+						Hi <strong>{currentUser && currentUser.name}</strong>! You currently
+						have <strong>{currentUser && currentUser.points}</strong> Carbonbase
+						points and have offset <strong>0</strong> tons of CO₂
 					</p>
 				</div>
 
