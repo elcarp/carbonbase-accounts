@@ -1,15 +1,25 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Tab, TabList, TabPanel, Tabs } from 'react-tabs'
-
-async function getUsers() {
-	return fetch('http://localhost:3333/list')
-		.then((response) => response.json())
-}
-console.log('users?', getUsers())
 
 const QRCode = require('qrcode.react')
 
 export default function Dashboard() {
+	const [users, setUsers] = useState<any>()
+
+	function getUsers() {
+		fetch('http://localhost:3333/list')
+			.then((response) => response.json())
+			.then(([users]) => {
+				setUsers(users)
+			})
+		return users
+	}
+	useEffect(() => {
+		getUsers()
+	}, [])
+
+	const currentUser = users
+console.log('current user', currentUser && currentUser.password)
 	return (
 		<>
 			<div className='dashboard-page w-full h-screen bg-chalet-green-100'>
@@ -44,8 +54,11 @@ export default function Dashboard() {
 						<div className='p-7 text-center'>
 							<div className='w-full flex justify-center'>
 								<div className='text-center'>
-								<p className='pb-5'>Request merchant to scan your QR code</p>
-								<QRCode className='mx-auto' value='http://91cf2815b256.ngrok.io/dashboard' />
+									<p className='pb-5'>Request merchant to scan your QR code</p>
+									<QRCode
+										className='mx-auto'
+										value='http://91cf2815b256.ngrok.io/dashboard'
+									/>
 								</div>
 							</div>
 						</div>

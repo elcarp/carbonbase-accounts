@@ -18,26 +18,10 @@
   },
   "list": [
     {
-      "id": {},
-      "username": "12",
-      "password": "123",
-      "points": 100
-    },
-    {
       "username": "lise",
-      "password": "lisespassword",
-      "id": "m7LB5Tw"
-    },
-    {
-      "username": "anapurna",
-      "password": "anapurna pass",
-      "id": "ANby9z5"
-    },
-    {
-      "username": "annapurna",
-      "password": "annapurnapassword",
+      "password": "lisepassword",
       "points": 100,
-      "id": "1c-xS-U"
+      "id": 1
     }
   ]
 }
