@@ -81,13 +81,13 @@ export default function Login({ setToken }, id, credentials) {
 										className='px-3 py-2 w-full mt-5 rounded-md focus:outline-none text-black'
 									/>
 									<input
-										type='text'
+										type='email'
 										placeholder='Your Email'
 										onChange={(e) => setUserName(e.target.value)}
 										className='px-3 py-2 w-full mt-5 rounded-md focus:outline-none text-black'
 									/>
 									<input
-										type='text'
+										type='password'
 										placeholder='Create a password (8 characters)'
 										onChange={(e) => setPassword(e.target.value)}
 										className='px-3 py-2 w-full mt-5 rounded-md focus:outline-none text-black'
