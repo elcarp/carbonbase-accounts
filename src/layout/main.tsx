@@ -12,11 +12,7 @@ function Main(token: any) {
 						exact
 						path='/'
 						render={() => {
-							return !token ? (
-								<Redirect to='/' />
-							) : (
-								<Redirect to='/dashboard' />
-							)
+							return !token ? <Redirect to='/' /> : <Redirect to='/dashboard' />
 						}}
 					/>
 					<Route path='/dashboard'>
