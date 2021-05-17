@@ -14,7 +14,7 @@ const SideBar: FunctionComponent = () => {
 					</li>
 					<li>
 						<Link className='text-white no-underline my-2 block' to='/main'>
-							User home
+							Home
 						</Link>
 					</li>
 					<li>
