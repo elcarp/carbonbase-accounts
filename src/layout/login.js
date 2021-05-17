@@ -1,13 +1,11 @@
 import React, { useState } from 'react'
 import { FaLeaf } from 'react-icons/fa'
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
-import BrandForm from '../components/brands'
-import IndividualForm from '../components/individuals'
+// import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
+// import BrandForm from '../components/brands'
+// import IndividualForm from '../components/individuals'
 import PropTypes from 'prop-types'
 
 async function loginUser(credentials) {
-	console.log('credentials?', credentials)
-
 	return fetch('http://localhost:8080/login', {
 		method: 'POST',
 		headers: {
@@ -16,10 +14,27 @@ async function loginUser(credentials) {
 		body: JSON.stringify(credentials),
 	}).then((data) => data.json())
 }
-export default function Login({ setToken }) {
+
+async function createUser(credentials, username, password) {
+	return fetch('http://localhost:3333/list', {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json',
+		},
+		body: JSON.stringify(credentials, username, password),
+	}).then((data) => data.json())
+}
+export default function Login({ setToken }, id, credentials) {
+	const [name, setName] = useState()
 	const [username, setUserName] = useState()
 	const [password, setPassword] = useState()
-
+	const loginCredentials = {
+		id: credentials,
+		name: name,
+		username: username,
+		password: password,
+		points: 100,
+	}
 	const handleSubmit = async (e) => {
 		e.preventDefault()
 		const token = await loginUser({
@@ -27,7 +42,9 @@ export default function Login({ setToken }) {
 			password,
 		})
 		setToken(token)
+		createUser(loginCredentials)
 	}
+
 	return (
 		<>
 			<div className='wrapper bg-chalet-green block md:flex items-center justify-center h-screen'>
@@ -56,6 +73,12 @@ export default function Login({ setToken }) {
 						<div className='choose-login'>
 							<form onSubmit={handleSubmit}>
 								<div className='form-wrapper text-sm'>
+									<input
+										type='text'
+										placeholder='Your Name'
+										onChange={(e) => setName(e.target.value)}
+										className='px-3 py-2 w-full mt-5 rounded-md focus:outline-none text-black'
+									/>
 									<input
 										type='text'
 										placeholder='Your Email'
@@ -103,6 +126,6 @@ export default function Login({ setToken }) {
 Login.propTypes = {
 	setToken: PropTypes.func.isRequired,
 }
-function setToken(token) {
-	throw new Error('Function not implemented.')
-}
+// function setToken(token) {
+// 	throw new Error('Function not implemented.')
+// }
