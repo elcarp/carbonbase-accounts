@@ -26,13 +26,14 @@ async function createUser(credentials, username, password) {
 		body: JSON.stringify(credentials, username, password),
 	}).then((data) => data.json())
 }
-export default function Login({ setToken }, id, credentials) {
+export default function Login({ setToken }, credentials) {
 	const [username, setUserName] = useState()
 	const [password, setPassword] = useState()
 	const loginCredentials = {
 		id: credentials,
 		username: username,
 		password: password,
+		points: 100,
 	}
 	const handleSubmit = async (e) => {
 		e.preventDefault()

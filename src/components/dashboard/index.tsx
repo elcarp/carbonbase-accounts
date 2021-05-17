@@ -1,6 +1,12 @@
 import React from 'react'
 import { Tab, TabList, TabPanel, Tabs } from 'react-tabs'
 
+async function getUsers() {
+	return fetch('http://localhost:3333/list')
+		.then((response) => response.json())
+}
+console.log('users?', getUsers())
+
 const QRCode = require('qrcode.react')
 
 export default function Dashboard() {
